@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background: linear-gradient(to right, #662549, #ae445a);
+  height: 100vh;
+  width: 100vw;
+}
+#h1Span {
+  color: red;
+}
+.app {
+  width: 500px;
+  max-width: 90%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app h1 {
+  color: white;
+}
+textarea {
+  width: 410px;
+  margin-top: 30px;
+  max-width: 100%;
+  resize: none;
+  background-color: #ff8989;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 12px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 30px;
+  border: 1px solid black;
+  width: fit-content;
+  background-color: #662549;
+}
+.btn img {
+  height: 30px;
+  color: white;
+}
+.btn button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+select {
+  flex: 1;
+  appearance: none;
+  font-size: 11px;
+  padding: 10px;
+  background-color: #ff8989;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+#arrowUp {
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  right: calc(43% - 50px);
+}
+.selectAndBtn {
+  display: flex;
+  width: 90%;
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  .btn button {
+    font-size: 10px;
+  }
+  .btn img {
+    height: 20px;
+  }
+  .selectAndBtn {
+    width: 100%;
+  }
+  #arrowUp {
+    right: calc(43% - 50px);
+  }
+}
